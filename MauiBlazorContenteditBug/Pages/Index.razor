@@ -1,0 +1,21 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<hr />
+
+<div style="border: 1px solid black;" contenteditable="true">
+    @text
+</div>
+
+<hr />
+
+<button style="height: 2rem; width: 100%">Click Me</button>
+
+@code {
+    string text = "write something here and move mouse at the same time";
+}
